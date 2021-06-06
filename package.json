@@ -1,0 +1,40 @@
+{
+  "name": "decode-base64",
+  "description": "A tiny function for decoding base64 strings into ArrayBuffer objects, useful for bundling and loading WASM modules.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc --skipLibCheck && tstei",
+    "compile:watch": "tsc --skipLibCheck --watch",
+    "prepublishOnly": "npm run clean && npm run compile"
+  },
+  "bugs": {
+    "url": "https://github.com/fabiospampinato/decode-base64/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Fabio Spampinato",
+    "email": "spampinabio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiospampinato/decode-base64.git"
+  },
+  "keywords": [
+    "decode",
+    "base64",
+    "arraybuffer",
+    "buffer",
+    "node",
+    "web",
+    "browser"
+  ],
+  "devDependencies": {
+    "@types/node": "^15.12.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.2",
+    "typescript-transform-export-interop": "^1.0.4"
+  }
+}
