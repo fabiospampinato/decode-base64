@@ -1,7 +1,7 @@
 {
   "name": "decode-base64",
   "description": "A tiny function for decoding base64 strings into Uint8Arrays, useful for bundling and loading WASM modules.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
