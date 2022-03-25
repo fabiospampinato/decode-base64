@@ -1,6 +1,6 @@
 {
   "name": "decode-base64",
-  "description": "A tiny function for decoding base64 strings into ArrayBuffer objects, useful for bundling and loading WASM modules.",
+  "description": "A tiny function for decoding base64 strings into Uint8Arrays, useful for bundling and loading WASM modules.",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,16 +25,16 @@
   "keywords": [
     "decode",
     "base64",
-    "arraybuffer",
+    "uint8array",
     "buffer",
     "node",
     "web",
     "browser"
   ],
   "devDependencies": {
-    "@types/node": "^15.12.1",
+    "@types/node": "^17.0.23",
     "rimraf": "^3.0.2",
-    "typescript": "^4.3.2",
+    "typescript": "^4.6.3",
     "typescript-transform-export-interop": "^1.0.4"
   }
 }

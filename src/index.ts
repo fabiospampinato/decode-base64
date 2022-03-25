@@ -1,24 +1,26 @@
 
 /* MAIN */
 
-const decode = ( base64: string ): ArrayBufferLike => {
+const decode = ( base64: string ): Uint8Array => {
 
   if ( typeof atob === 'function' ) { // Browser
 
     const binary = atob ( base64 );
-    const bytes = new Uint8Array ( binary.length );
+    const u8 = new Uint8Array ( binary.length );
 
     for ( let i = 0, l = binary.length; i < l; i++ ) {
 
-      bytes[i] = binary.charCodeAt ( i );
+      u8[i] = binary.charCodeAt ( i );
 
     }
 
-    return bytes.buffer;
+    return u8;
 
   } else { // Node.js
 
-    return Buffer.from ( base64, 'base64' ).buffer;
+    const buffer = Buffer.from ( base64, 'base64' );
+
+    return new Uint8Array ( buffer.buffer, buffer.byteOffset, buffer.byteLength );
 
   }
 

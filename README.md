@@ -1,6 +1,6 @@
 # Decode Base64
 
-A tiny function for decoding base64 strings into ArrayBuffer objects, useful for bundling and loading WASM modules.
+A tiny function for decoding base64 strings into Uint8Arrays, useful for bundling and loading WASM modules.
 
 ## Install
 
@@ -13,7 +13,7 @@ npm install --save decode-base64
 ```ts
 import decode from 'decode-base64';
 
-decode ( 'base64 string here...' ); // => ArrayBuffer
+decode ( 'base64 string here...' ); // => Uint8Arrays
 ```
 
 ## License
