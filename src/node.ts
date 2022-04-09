@@ -1,15 +1,13 @@
 
 /* IMPORT */
 
-import {Buffer} from 'node:buffer';
+import Buffer from 'node-buffer-encoding';
 
 /* MAIN */
 
 const decode = ( base64: string ): Uint8Array => {
 
-  const buffer = Buffer.from ( base64, 'base64' );
-
-  return new Uint8Array ( buffer.buffer, buffer.byteOffset, buffer.byteLength );
+  return Buffer.decode ( base64, 'base64' );
 
 };
 
