@@ -13,7 +13,7 @@ npm install --save decode-base64
 ```ts
 import decode from 'decode-base64';
 
-decode ( 'base64 string here...' ); // => Uint8Arrays
+decode ( 'base64 string here...' ); // => Uint8Array
 ```
 
 ## License
