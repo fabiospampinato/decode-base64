@@ -2,6 +2,7 @@
   "name": "decode-base64",
   "repository": "github:fabiospampinato/decode-base64",
   "description": "A tiny function for decoding base64 strings into Uint8Arrays, useful for bundling and loading WASM modules.",
+  "license": "MIT",
   "version": "3.0.1",
   "type": "module",
   "main": "dist/node.js",
@@ -28,12 +29,12 @@
     "browser"
   ],
   "dependencies": {
-    "node-buffer-encoding": "^1.0.1"
+    "node-buffer-encoding": "^1.0.3"
   },
   "devDependencies": {
-    "fava": "^0.2.1",
-    "tsex": "^3.0.1",
-    "typescript": "^5.1.6",
-    "uint8-encoding": "^2.0.0"
+    "fava": "^0.3.4",
+    "tsex": "^4.0.2",
+    "typescript": "^5.7.3",
+    "uint8-encoding": "^2.0.1"
   }
 }
